@@ -1,0 +1,61 @@
+/* ******* Reset CSS ******* */
+
+html {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+
+/* ******* Variable css ******* */
+
+
+:root {
+  /* Fuentes size*/
+  --h1-encabezado: 40px;
+  --h2-encabezado: 35px;
+  --h3-encabezado: 30px;
+  --h4-encabezado: 25px;
+  --h5-encabezado: 22.5px;
+  --h6-encabezado: 20px;
+  --p-parrafo: 20px;
+  
+  /* Fuentes weight */
+  --fuente-regular: 400;
+  --fuente-medium: 500;
+  --fuente-bold: 700;
+
+  /* Colores */
+
+  /* Color 1 */
+  --color-1: #511216;
+  --color-1-variante-50: rgba(81, 18, 22, 0.5);
+  --color-1-variante-85: rgba(81, 18, 22, 0.85);
+
+  /* Color 2 */
+  --color-2: #B7713D;
+  --color-2-variante-50: rgba(183, 113, 61, 0.5);
+  --color-2-variante-85: rgba(183, 113, 61, 0.85);
+
+  /* blanco - oscuro */
+  --color-oscuro: #000000;
+  --color-blanco: #F4F4F6;
+}
+
+
+
+/* ******* Componentes ******* */
+
+
+h1 {
+  color: var(--color-1-variante-50);
+  font-weight: var(--fuente-bold);
+}
