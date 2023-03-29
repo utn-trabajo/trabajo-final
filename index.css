@@ -14,7 +14,6 @@ html {
 }
 
 
-
 /* ******* Variable css ******* */
 
 
@@ -36,14 +35,19 @@ html {
   /* Colores */
 
   /* Color 1 */
-  --color-1: #511216;
-  --color-1-variante-50: rgba(81, 18, 22, 0.5);
-  --color-1-variante-85: rgba(81, 18, 22, 0.85);
+  --color-1: #0F1E56;
+  --color-1-variante-50: rgb(15, 30, 86);
+  --color-1-variante-85: rgb(15, 30, 86);
 
   /* Color 2 */
-  --color-2: #B7713D;
-  --color-2-variante-50: rgba(183, 113, 61, 0.5);
-  --color-2-variante-85: rgba(183, 113, 61, 0.85);
+  --color-2: #597BAF;
+  --color-2-variante-50: rgb(89, 123, 175);
+  --color-2-variante-85: rgb(89, 123, 175);
+
+  /* Color 3 */
+  --color-3: #C3BDBB;
+  --color-3-variante-50: rgb(195, 189, 187);
+  --color-3-variante-85: rgb(195, 189, 187);
 
   /* blanco - oscuro */
   --color-oscuro: #000000;
