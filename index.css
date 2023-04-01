@@ -169,6 +169,7 @@ a {
 .main__container__subtitle {
   text-align: center;
 }
+
 .main__container__subtitle:before {
   content: "";
   width: 120px;
@@ -207,11 +208,88 @@ a {
   transition: 2s;
 }
 
+/* Contact */
+.contact {
+  background-color: var(--color-1);
+  color: var(--color-blanco);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.contact__image {
+  width: 50%;
+  height: 100%;
+  background-image: url("./images/foto-contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+}
+
+.contact__logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center
+}
+
+.contact__logo__title {
+  font-family: "Tenor Sans";
+  font-size: var(--h1-encabezado);
+  font-size: 80px;
+}
+
+.contact__logo__subtitle {
+  text-align: center;
+}
+
+.contact__logo__subtitle:before {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: block;
+  background-color: white;
+}
+
+.contact__text-uno {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact__text-uno h2 {
+  text-align: center;
+  font-weight: var(--fuente-medium);
+}
+
+.contact__text-dos,
+.contact__text-tres,
+.contact__text-cuatro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 50px;
+}
+
+.contact__text-cuatro div {
+  display: flex;
+  gap: 10px;
+}
+
+
+
 /* Footer */
 
 .footer {
-  height: 12rem;
-  background-color: var(--color-1);
+  height: 300px;
+  background-color: var(--color-2);
 }
 
 .footer_container {
@@ -263,7 +341,7 @@ a {
 .footer__menu__link:hover,
 .footer__social__link:hover,
 .footer__legal__link:hover {
-  color: var(--color-2);
+  color: var(--color-1);
 }
 
 .copyright {
