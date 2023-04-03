@@ -1,0 +1,88 @@
+/* ******* Reset CSS ******* */
+
+html {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ******* Variable css ******* */
+
+:root {
+  /* Fuentes size*/
+  --h1-encabezado: 64px;
+  --h2-encabezado: 35px;
+  --h3-encabezado: 30px;
+  --h4-encabezado: 25px;
+  --h5-encabezado: 22.5px;
+  --h6-encabezado: 20px;
+  --p-parrafo: 20px;
+
+  /* Fuentes weight */
+  --fuente-regular: 400;
+  --fuente-medium: 500;
+  --fuente-bold: 700;
+
+  /* Colores */
+
+  /* Color 1 */
+  --color-1: #0f1e56;
+  --color-1-variante-50: rgb(15, 30, 86);
+  --color-1-variante-85: rgb(15, 30, 86);
+
+  /* Color 2 */
+  --color-2: #597baf;
+  --color-2-variante-50: rgb(89, 123, 175);
+  --color-2-variante-85: rgb(89, 123, 175);
+
+  /* Color 3 */
+  --color-3: #c3bdbb;
+  --color-3-variante-50: rgb(195, 189, 187);
+  --color-3-variante-85: rgb(195, 189, 187);
+
+  /* Color 4 */
+  --color-4: #fcc79b;
+
+  /* blanco - oscuro */
+  --color-oscuro: #000000;
+  --color-blanco: #f4f4f6;
+}
+
+/* ******* Componentes ******* */
+
+#products {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  row-gap: 300px;
+}
+
+
+.card {
+  width: 200px;
+  height: 100px;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+}
