@@ -1,5 +1,5 @@
 // Imports
-import { dataWomen } from "../api/women.js";
+import { dataWomen } from "../api-products/women.js";
 
 // DOM
 const d = document;
