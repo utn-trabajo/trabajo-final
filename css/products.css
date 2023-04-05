@@ -76,13 +76,33 @@ img {
   row-gap: 300px;
 }
 
-
 .card {
   width: 200px;
   height: 100px;
+  /* Necesario para los filtros */
+  display: none;
 }
 
 .card__bottom {
   display: flex;
   justify-content: space-between;
+}
+
+/* Filtros */
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
 }

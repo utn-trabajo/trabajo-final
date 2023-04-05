@@ -11,6 +11,13 @@
 </head>
 
 <body>
+  <div id="buttons">
+    <button class="btn" onclick="filterObjects('all')">Ver todo</button>
+    <button class="btn" onclick="filterObjects('shorts')">Shorts</button>
+    <button class="btn" onclick="filterObjects('pants')">Panalones</button>
+    <button class="btn" onclick="filterObjects('shirts')">Camisas</button>
+    <button class="btn" onclick="filterObjects('t-shirts')">Remeras</button>
+  </div>
 
   <section id="products"></section>
 
@@ -22,10 +29,12 @@
         <p class="card__bottom__price"></p>
         <button value="true" id="card__bottom__button">Comprar</button>
       </div>
+      <button id="category" data-description hidden></button>
     </div>
   </template>
 
   <script src="../js/getProductsMen.js" type="module"></script>
+  <script src="../js/filterProducts.js"></script>
 </body>
 
 </html>
