@@ -135,3 +135,44 @@ img {
 .btn:hover {
   background-color: #ddd;
 }
+
+/* Buscador */
+
+
+#buscador{
+  font-family: 'Poppins', sans-serif;
+  top: 10px;
+  width: 25vw;
+  padding: 10px;
+  outline: none;
+  border: 2px solid var(--color-1);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#buscador::placeholder {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  color: #0f1e56;
+}
+
+#buscador:focus {
+  outline: none;
+}
+
+.filtro{
+  display: none;
+}
+
+
+.main__container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
