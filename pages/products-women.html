@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,35 @@
   <!-- Styles -->
   <link rel="stylesheet" href="../css/products.css">
 </head>
+
 <body>
-
-<section id="products"></section>
-
-<template>
-  <div class="card">
-    <img class="card__image">
-    <h2 class="card__title"></h2>
-    <div class="card__bottom">
-      <p class="card__bottom__price"></p>
-      <button value="true" id="card__bottom__button">Comprar</button>
-    </div>
+  <main class="main">
+  <div id="buttons">
+    <h2 class="buttons__title">PRENDAS</h2>
+    <button class="btn" onclick="filterObjects('all')">Ver todo</button>
+    <button class="btn" onclick="filterObjects('short')">Shorts</button>
+    <button class="btn" onclick="filterObjects('pants')">Pantalones</button>
+    <button class="btn" onclick="filterObjects('skirts')">Pollera</button>
+    <button class="btn" onclick="filterObjects('t-shirt')">Remeras</button>
   </div>
-</template>
 
-<script src="../js/getProductsWomen.js" type="module"></script>
+  <section id="products"></section>
+</main>
+
+  <template>
+    <div class="card">
+      <img class="card__image">
+      <h2 class="card__title"></h2>
+      <div class="card__bottom">
+        <p class="card__bottom__price"></p>
+        <button value="true" id="card__bottom__button">Comprar</button>
+      </div>
+      <button id="category" data-description hidden></button>
+    </div>
+  </template>
+
+  <script src="../js/getProductsWomen.js" type="module"></script>
+  <script src="../js/filterProducts.js"></script>
 </body>
+
 </html>
