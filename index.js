@@ -1,5 +1,5 @@
-import membersButton from "./js/boton_members.js";
-import scrollTopButton from "./js/boton_scroll.js";
+import membersButton from "./js/button_members.js";
+import scrollTopButton from "./js/button_scroll.js";
 
 const d = document;
 

@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll("#category");
+
+  cards.forEach((card) => {
+    card.parentNode.classList.add(card.dataset.category);
+  });
+  
   filterObjects("all");
 });
-
 
 function filterObjects(c) {
   var x, i;
