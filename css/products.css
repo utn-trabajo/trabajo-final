@@ -91,6 +91,7 @@ img {
 
 #products {
   width: 100%;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -139,6 +140,7 @@ img {
 
 
 #buscador{
+  position: absolute;
   font-family: 'Poppins', sans-serif;
   top: 10px;
   width: 25vw;
@@ -172,6 +174,6 @@ img {
   width: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
 }
