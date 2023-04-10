@@ -31,8 +31,8 @@ export const dataWomen = [
     name: "Pantalon Celeste",
     price: 15000,
     category: "pants",
-    image: "../api-products/images/women/pants/Pantalon-negro-stock.jpg",
-    variant: "../api-products/images/women/pants/variants/Pantalon-negro.jpg",
+    image: "../api-products/images/women/pants/Pantalon-celeste-stock.jpg",
+    variant: "../api-products/images/women/pants/variants/Pantalon-celeste.jpg",
   },
   {
     id: "5",
