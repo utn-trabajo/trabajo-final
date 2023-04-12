@@ -11,6 +11,7 @@ const getProducts = (dataWomen) => {
   dataWomen.forEach((el) => {
     $template.querySelector(".card__image").setAttribute("src", el.image);
     $template.querySelector(".card__image").setAttribute("alt", el.name);
+    $template.querySelector(".card__variant").setAttribute("src", el.variant);
     $template.querySelector(".card__title").textContent = el.name;
     $template.querySelector(".card__bottom__price").textContent = "$" + el.price;
     $template.querySelector("#category").dataset.category = el.category;
