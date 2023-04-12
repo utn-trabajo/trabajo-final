@@ -3,7 +3,7 @@ export const dataMen = [
     {
         id: "1",
         name: "Bermuda Azul",
-        price: 15000,
+        price: 23990,
         category: "shorts",
         image: "../api-products/images/men/shorts/Bermuda-Azul-Stock.jpg",
         variant: "../api-products/images/men/shorts/variants/Bermuda-Azul.jpg",
@@ -11,7 +11,7 @@ export const dataMen = [
     {
         id: "2",
         name: "Bermuda Blanca",
-        price: 15000,
+        price: 13990,
         category: "shorts",
         image: "../api-products/images/men/shorts/Bermuda-Blanca-Stock.jpg",
         variant: "../api-products/images/men/shorts/variants/Bermuda-Blanca.jpg",
@@ -20,7 +20,7 @@ export const dataMen = [
     {
         id: "3",
         name: "Pantalon Beige",
-        price: 15000,
+        price: 20990,
         category: "pants",
         image: "../api-products/images/men/pants/Pantalon-beige-Stock.jpg",
         variant: "../api-products/images/men/pants/variants/Pantalon-beige-BLC.jpg",
@@ -28,7 +28,7 @@ export const dataMen = [
     {
         id: "4",
         name: "Pantalon Blanco",
-        price: 15000,
+        price: 20990,
         category: "pants",
         image: "../api-products/images/men/pants/Pantalon-blanco-Stock.jpg",
         variant: "../api-products/images/men/pants/variants/Pantalon-blanco-BLC.jpg",
@@ -36,7 +36,7 @@ export const dataMen = [
     {
         id: "5",
         name: "Pantalon Gris",
-        price: 15000,
+        price: 27990,
         category: "pants",
         image: "../api-products/images/men/pants/Pantalon-gris-Stock.jpg",
         variant: "../api-products/images/men/pants/variants/Pantalon-gris-BLC.jpg",
@@ -45,7 +45,7 @@ export const dataMen = [
     {
         id: "6",
         name: "Camisa Azul",
-        price: 15000,
+        price: 20990,
         category: "shirts",
         image: "../api-products/images/men/shirts/Camisa-azul-Stock.jpg",
         variant: "../api-products/images/men/shirts/variants/Camisa-azul-Blc.jpg",
@@ -53,7 +53,7 @@ export const dataMen = [
     {
         id: "7",
         name: "Camisa Blanca",
-        price: 15000,
+        price: 19550,
         category: "shirts",
         image: "../api-products/images/men/shirts/Camisa-blanca-Stock.jpg",
         variant: "../api-products/images/men/shirts/variants/Camisa-blanca-Blc.jpg",
@@ -61,7 +61,7 @@ export const dataMen = [
     {
         id: "8",
         name: "Camisa Gris",
-        price: 15000,
+        price: 25550,
         category: "shirts",
         image: "../api-products/images/men/shirts/Camisa-gris-Stock.jpg",
         variant: "../api-products/images/men/shirts/variants/Camisa-gris-Blc.jpg",
@@ -69,7 +69,7 @@ export const dataMen = [
     {
         id: "9",
         name: "Camisa Rosa",
-        price: 15000,
+        price: 19590,
         category: "shirts",
         image: "../api-products/images/men/shirts/Camisa-rosa-Stock.jpg",
         variant: "../api-products/images/men/shirts/variants/Camisa-rosa-Blc.jpg",
@@ -78,7 +78,7 @@ export const dataMen = [
     {
         id: "10",
         name: "Polo Azul",
-        price: 15000,
+        price: 20990,
         category: "t-shirts",
         image: "../api-products/images/men/t-shirts/Polo-azul-Stock.jpg",
         variant: "../api-products/images/men/t-shirts/variants/Polo-azul.jpg",
@@ -86,7 +86,7 @@ export const dataMen = [
     {
         id: "11",
         name: "Polo Rayado",
-        price: 15000,
+        price: 15590,
         category: "t-shirts",
         image: "../api-products/images/men/t-shirts/Polo-Rayas-Stock.jpg",
         variant: "../api-products/images/men/t-shirts/variants/Polo-Rayas.jpg",
@@ -94,7 +94,7 @@ export const dataMen = [
     {
         id: "12",
         name: "Remera Amarilla",
-        price: 15000,
+        price: 23990,
         category: "t-shirts",
         image: "../api-products/images/men/t-shirts/Remera-amarilla-Stock.jpg",
         variant: "../api-products/images/men/t-shirts/variants/Remera-amarilla.jpg",
