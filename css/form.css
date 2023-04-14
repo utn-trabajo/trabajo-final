@@ -4,6 +4,48 @@
     box-sizing: border-box;
 }
 
+/* ******* Variable css ******* */
+
+:root {
+    /* Fuentes size*/
+    --h1-encabezado: 64px;
+    --h2-encabezado: 35px;
+    --h3-encabezado: 30px;
+    --h4-encabezado: 25px;
+    --h5-encabezado: 22.5px;
+    --h6-encabezado: 20px;
+    --p-parrafo: 20px;
+  
+    /* Fuentes weight */
+    --fuente-regular: 400;
+    --fuente-medium: 500;
+    --fuente-bold: 700;
+  
+    /* Colores */
+  
+    /* Color 1 */
+    --color-1: #0f1e56;
+    --color-1-variante-50: rgb(15, 30, 86);
+    --color-1-variante-85: rgb(15, 30, 86);
+  
+    /* Color 2 */
+    --color-2: #597baf;
+    --color-2-variante-50: rgb(89, 123, 175);
+    --color-2-variante-85: rgb(89, 123, 175);
+  
+    /* Color 3 */
+    --color-3: #c3bdbb;
+    --color-3-variante-50: rgb(195, 189, 187);
+    --color-3-variante-85: rgb(195, 189, 187);
+  
+    /* Color 4 */
+    --color-4: #fcc79b;
+  
+    /* blanco - oscuro */
+    --color-oscuro: #000000;
+    --color-blanco: #f4f4f6;
+  }
+
 :root {
     --color-bg-1: #008080;
     --color-bg-2: #FEF9E7;
@@ -20,7 +62,7 @@
     min-height: 100vh;
     font-size: 50px;
     font-family: "Poppins";
-    background-image: linear-gradient(var(--color-bg-1), var(--color-bg-2));
+    background-color: #ffffff;
     overflow: hidden;
 }
 
@@ -44,20 +86,21 @@
 .progressbar__option {
     width: 100%;
     text-align: center;
-    font-size: .7rem;
+    font-size: 1rem;
     text-transform: uppercase;
     position: relative;
+    color: white;
 }
 
 .progressbar__option:before {
     display: flex;
     content: counter(step);
     counter-increment: step;
-    width: 20px;
-    height: 20px;
-    background-color: white;
+    width: 35px;
+    height: 35px;
+    background-color: #D9D9D9;
     margin: 0 auto 5px;
-    border-radius: 3px;
+    border-radius: 50%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -70,9 +113,9 @@
     content: '';
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #D9D9D9;
     position: absolute;
-    top: 10px;
+    top: 15px;
     left: -50%;
     z-index: 1;
 }
@@ -82,7 +125,7 @@
 }
 
 .progressbar__option.active:before, .progressbar__option.active:after {
-    background-color: var(--color-header-step);
+    background-color: #597BAF;
 }
 
 /* Título del formulario */
@@ -135,13 +178,13 @@
 /* header de step */
 .step__header {
     padding: 20px 15px;
-    background-color: var(--color-header-step);
     border-radius: 3px 3px 0 0;
 }
 
 .step__title {
-    font-size: 1.1rem;
-    text-align: center;
+    font-family: "Tenor Sans";
+    font-size: 1.6rem;
+    text-align: start;
 }
 
 /* body de step */
@@ -151,12 +194,14 @@
 
 /* step inputs */
 .step__input {
+    background-color: #D9D9D9;
     display: block;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid var(--color-border-input);
+    color: #111111;
 }
 
 /* step footer */
@@ -169,9 +214,87 @@
 .step__button {
     display: inline-block;
     padding: 10px;
-    background-color: var(--color-btn);
+    background-color: #0F1E56;
     border: none;
     color: white;
     border-radius: 3px;
     cursor: pointer;
 }
+
+/* HEADER */
+
+.header-container {
+    background-color: var(--color-2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .header-logo .logo {
+    width: 30%;
+    height: auto;
+  }
+  
+  .header-list .header-menu li {
+    display: flex;
+    justify-content: flex-end;
+    width: 250px;
+  }
+  
+  .header-menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .header-options {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-family: "Tenor Sans";
+    font-size: 20px;
+    font-weight: var(--fuente-bold);
+  }
+  
+  /* ANIMACION A */
+  
+  .header-options {
+    background-image: linear-gradient(
+      to right,
+      #fcc79b,
+      #fcc79b 50%,
+      var(--color-blanco) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-options:before {
+    content: "";
+    background: var(--color-4);
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .header-options:hover {
+    background-position: 0;
+  }
+  
+  .header-options:hover::before {
+    width: 100%;
+  }
