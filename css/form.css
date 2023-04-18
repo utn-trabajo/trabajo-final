@@ -221,6 +221,18 @@
     cursor: pointer;
 }
 
+.step__button__pdf{
+    font-size: 14px;
+    font-family: "Tenor Sans";
+    display: inline-block;
+    padding: 10px;
+    background-color: #0F1E56;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 /* HEADER */
 
 .header-container {
