@@ -24,8 +24,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- ******* Styles css ******* -->
-    <link rel="stylesheet" href="../css/form.css">
-</head>
+        <link rel="stylesheet" href="../css/form.css">
+
+
+    <!-- ******* PDF ******* -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+    </head>
 <body>
     <!-- Comienzo de la pagina -->
   <header class="header">
@@ -69,10 +75,10 @@
                         <h2 class="step__title">Datos Personales<small></small>
                     </div>
                     <div class="step__body">
-                        <input type="text" placeholder="Nombre y Apellido" class="step__input">
-                        <input type="email" placeholder="Email" class="step__input">
-                        <input type="text" placeholder="País" class="step__input">
-                        <input type="text" placeholder="Código postal" class="step__input">
+                        <input type="text" placeholder="Nombre y Apellido" class="step__input" id="NyA">
+                        <input type="email" placeholder="Email" class="step__input" id="Email" >
+                        <input type="text" placeholder="País" class="step__input" id="Pais">
+                        <input type="text" placeholder="Código postal" class="step__input" id="CP">
                     </div>
                     <div class="step__footer">
                         <button type="button" class="step__button step__button--next" data-to_step="2" data-step="1">Siguiente</button>
@@ -83,10 +89,10 @@
                         <h2 class="step__title">Forma de Entrega<small></small></h2>
                     </div>
                     <div class="step__body">
-                        <input type= "text" placeholder="Llega el martes a tu domicilio" class="step__input">
-                        <input type= "text" placeholder= "Llega el lunes a la sucursal más cercana" class="step__input">
-                        <input type="text" placeholder="Dirección" class="step__input">
-                        <textarea rows="4" cols="80" placeholder="Dirección" class="step__input"></textarea>
+                        <input type= "text" placeholder="Llega el martes a tu domicilio" class="step__input" id="EnvioE">
+                        <input type= "text" placeholder= "Llega el lunes a la sucursal más cercana" class="step__input" id="EnvioS">
+                        <input type="text" placeholder="Dirección" class="step__input" id="Direc">
+                        <textarea rows="4" cols="80" placeholder="Descripcion" class="step__input" id="Descrip"></textarea>
                     </div>
                     <div class="step__footer">
                         <button type="button" class="step__button step__button--back" data-to_step="1" data-step="2">Regresar</button>
@@ -98,18 +104,20 @@
                         <h2 class="step__title">Forma de Pago <small></small></h2>
                     </div>
                     <div class="step__body">
-                        <input type="text" placeholder="Tarjeta de crédito" class="step__input">
-                        <input type="text" placeholder="Efectivo en otros puntos de pago" class="step__input">
-                        <input type="text" placeholder="Dato x" class="step__input">
+                        <input type="text" placeholder="Tarjeta de crédito" class="step__input" id="Tarjeta">
+                        <input type="text" placeholder="Efectivo en otros puntos de pago" class="step__input" id="Pago">
+                        <input type="text" placeholder="Dato x" class="step__input" id="DatoX">
+                        <input type="text" placeholder="Monto a Pagar" class="step__input" id="Monto">
                     </div>
                     <div class="step__footer">
                         <button type="button" class="step__button step__button--back" data-to_step="2" data-step="3">Regresar</button>
-                        <button type="submit" class="step__button">Comprar</button>
+                        <button id="PDFdw" type="submit" class="step__button__pdf">Comprar</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
     <script src="../js/form-wizard.js"></script>
+    <script src="../js/PDF.js"></script>
 </body>
 </html>
