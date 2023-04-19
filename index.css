@@ -360,16 +360,16 @@ a {
   height: 30px;
   display: flex;
   justify-content: space-between;
+  padding: 0rem 1rem;
 }
 
 .input__form::placeholder {
   color: var(--color-1);
   font-family: "Poppins", sans-serif;
-  padding: 10px;
   outline: none;
   font-size: 12px;
-  margin-left: 20px;
 }
+
 
 .span__form {
   font-family: "Font Awesome 5 Free";
